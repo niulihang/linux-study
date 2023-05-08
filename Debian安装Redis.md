@@ -24,3 +24,5 @@ Redis默认只能本地连接，远程连接需要注释掉`/etc/redis/redis.con
 完成后，执行命令`sudo systemctl restart redis-server`，重启redis。
 
 如果使用了ufw防火墙，需要允许redis端口远程连接，执行命令`sudo ufw allow redis`。
+
+> 如果没有配置用户名，远程连接时的用户名为`default`，也可以不填写用户名
